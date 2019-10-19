@@ -17,6 +17,59 @@ npm run build
 # fix eslint
 npm run lint:fix
 ```
+# use proxy
+Create config.js in the root directory
+config.js sample data:
+module.exports = {
+    'proxy': {
+        'custom_name': { // Maple属性值为代理配置
+            'baseUrl': '/',
+            'devServer': {
+                'proxy': {
+                    '/api': {
+                        'target': 'http://www.maplehu.com.cn/',
+                        'changeOrigin': true,
+                        'ws': true,
+                        'pathRewrite': {
+                            '^/api': ''
+                        }
+                    }
+                }
+            }
+        },
+        'custom_name_1': { // Maple属性值为代理配置
+            'baseUrl': '/',
+            'devServer': {
+                'proxy': {
+                    '/api': {
+                        'target': 'http://www.maplehu.com.cn/',
+                        'changeOrigin': true,
+                        'ws': true,
+                        'pathRewrite': {
+                            '^/api': ''
+                        }
+                    }
+                }
+            }
+        },
+        'custom_name_n': { // Maple属性值为代理配置
+            'baseUrl': '/',
+            'devServer': {
+                'proxy': {
+                    '/api': {
+                        'target': 'http://www.maplehu.com.cn/',
+                        'changeOrigin': true,
+                        'ws': true,
+                        'pathRewrite': {
+                            '^/api': ''
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+Using examples：npm start custom_name
 
 ### Contact information
 QQ：1330713179
