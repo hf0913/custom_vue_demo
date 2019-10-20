@@ -17,7 +17,7 @@ npm run build
 # fix eslint
 npm run lint:fix
 ```
-# use proxy
+### use proxy
 Create config.js in the root directory
 config.js sample data:
 module.exports = {
@@ -71,7 +71,10 @@ module.exports = {
 };
 Using examples：npm start custom_name
 
-### Contact information
+#### pay attention
+Please do not add comments to the file（package.json）
+
+##### Contact information
 QQ：1330713179
 WeChat：HF15243886475
 Email：fenghu0913@gmail.com
