@@ -5,15 +5,11 @@
     "author": "Maple <fenghu0913@gmail.com>",
     "private": true,
     "scripts": {
-        "lint:fix": "cross-env NODE_ENV=fixLint Maple",
-        "start": "cross-env NODE_ENV=dev Maple",
-        "build": "Maple"
-    },
-    "dependencies": {
-        "vue": "^2.5.2"
-    },
-    "devDependencies": {
-        "custom_vue": "^1.6.8"
+        "start": "Maple serve",
+        "build": "Maple build",
+        "eslint:fix": "Maple fixEslint",
+        "stylelint:fix": "Maple fixStyleLint",
+        "lint": "Maple lint"
     },
     "engines": {
         "node": ">= 6.0.0",
@@ -24,9 +20,13 @@
         "last 2 versions",
         "not ie <= 8"
     ],
+    "devDependencies": {
+        "custom_vue": "^1.8.1",
+        "husky": "^3.1.0"
+    },
     "husky": {
         "hooks": {
-            "pre-commit": "cross-env NODE_ENV=lint Maple"
+            "pre-commit": "Maple lint"
         }
     }
 }
