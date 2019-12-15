@@ -41,7 +41,8 @@ module.exports = {
             allow: ["log", "warn"]
         }],
         "arrow-parens": 0,
-        "no-new": 0
+        "no-new": 0,
+        "no-throw-literal": 0
     },
     globals: {
         "document": true,

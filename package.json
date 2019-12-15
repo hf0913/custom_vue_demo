@@ -21,11 +21,15 @@
         "not ie <= 8"
     ],
     "devDependencies": {
-        "custom_vue": "^1.8.2"
+        "address": "^1.1.2",
+        "cross-env": "^6.0.3",
+        "custom_vue": "^1.9.8",
+        "stylelint-webpack-plugin-maple": "0.0.2"
     },
     "husky": {
         "hooks": {
             "pre-commit": "Maple lint"
         }
-    }
+    },
+    "dependencies": {}
 }
