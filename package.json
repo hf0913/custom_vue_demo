@@ -23,8 +23,5 @@
         "hooks": {
             "pre-commit": "Maple lint"
         }
-    },
-    "dependencies": {
-        "address": "^1.1.2"
     }
 }
