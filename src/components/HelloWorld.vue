@@ -1,9 +1,5 @@
 <template>
   <div class="hello">
-    <ul class="test">
-      <li>1</li>
-      <li>2</li>
-    </ul>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -117,9 +113,5 @@ li {
 
 a {
     color: #42b983;
-}
-
-.test {
-    display: flex;
 }
 </style>
