@@ -16,7 +16,7 @@
         "npm": ">= 3.0.0"
     },
     "devDependencies": {
-        "custom_vue": "^2.0.3",
+        "custom_vue": "^2.0.4",
         "stylelint-webpack-plugin-maple": "0.0.2"
     },
     "husky": {
@@ -24,5 +24,7 @@
             "pre-commit": "Maple lint"
         }
     },
-    "dependencies": {}
+    "dependencies": {
+        "address": "^1.1.2"
+    }
 }
