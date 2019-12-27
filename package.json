@@ -15,15 +15,8 @@
         "node": ">= 6.0.0",
         "npm": ">= 3.0.0"
     },
-    "browserslist": [
-        "> 1%",
-        "last 2 versions",
-        "not ie <= 8"
-    ],
     "devDependencies": {
-        "address": "^1.1.2",
-        "cross-env": "^6.0.3",
-        "custom_vue": "^1.9.8",
+        "custom_vue": "^2.0.3",
         "stylelint-webpack-plugin-maple": "0.0.2"
     },
     "husky": {
