@@ -15,13 +15,13 @@
         "node": ">= 6.0.0",
         "npm": ">= 3.0.0"
     },
-    "devDependencies": {
-        "custom_vue": "^2.0.5",
-        "stylelint-webpack-plugin-maple": "0.0.2"
-    },
+    "devDependencies": {},
     "husky": {
         "hooks": {
             "pre-commit": "Maple lint"
         }
+    },
+    "dependencies": {
+        "custom_vue": "^2.0.5"
     }
 }

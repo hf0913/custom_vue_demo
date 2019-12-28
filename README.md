@@ -14,65 +14,20 @@ npm start
 # build for production with minification
 npm run build
 
-# fix eslint
-npm run lint:fix
 ```
 ### use proxy
-Create config.js in the root directory
-config.js sample data:
+Create _config.js in the root directory
+_config.js sample data:
 module.exports = {
-    'proxy': {
-        'custom_name': { // Maple属性值为代理配置
-            'baseUrl': '/',
-            'devServer': {
-                'proxy': {
-                    '/api': {
-                        'target': 'http://www.maplehu.com.cn/',
-                        'changeOrigin': true,
-                        'ws': true,
-                        'pathRewrite': {
-                            '^/api': ''
-                        }
-                    }
-                }
-            }
-        },
-        'custom_name_1': { // Maple属性值为代理配置
-            'baseUrl': '/',
-            'devServer': {
-                'proxy': {
-                    '/api': {
-                        'target': 'http://www.maplehu.com.cn/',
-                        'changeOrigin': true,
-                        'ws': true,
-                        'pathRewrite': {
-                            '^/api': ''
-                        }
-                    }
-                }
-            }
-        },
-        'custom_name_n': { // Maple属性值为代理配置
-            'baseUrl': '/',
-            'devServer': {
-                'proxy': {
-                    '/api': {
-                        'target': 'http://www.maplehu.com.cn/',
-                        'changeOrigin': true,
-                        'ws': true,
-                        'pathRewrite': {
-                            '^/api': ''
-                        }
-                    }
-                }
-            }
+    proxy: {
+        '/api': {
+            target: 'http://localhost:3000',
+            pathRewrite: { '^/api': '' }
         }
-    }
+    },
+    port: 1105,
+    entryApp: './src/main.js'
 };
-Using examples：npm start custom_name
-
-#### pay attention
-Please do not add comments to the file（package.json）
 
 ##### Contact information
 QQ：1330713179
