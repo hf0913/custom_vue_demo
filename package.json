@@ -16,7 +16,7 @@
         "npm": ">= 3.0.0"
     },
     "devDependencies": {
-        "custom_vue": "^2.1.2",
+        "custom_vue": "^2.1.5",
         "node-sass": "^4.13.0"
     },
     "husky": {

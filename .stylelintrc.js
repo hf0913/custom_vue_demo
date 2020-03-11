@@ -35,5 +35,6 @@ module.exports = {
         "no-duplicate-selectors": true, // 不允许重复的选择器
         "no-eol-whitespace": true, // 不允许行尾空白(stylelint-config-standard)
         "no-invalid-double-slash-comments": true, // 不允许双斜杠注释(/ /…)不支持CSS(stylelint-config-standard)
+        "rule-empty-line-before": "never"
     }
 };
